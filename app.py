@@ -13,5 +13,6 @@ if uploaded_file is not None:
    st.write(df1)
    st.subheader('Estadísticos básicos de los sensores')
    st.dataframe(df1["temperatura ESP32"].describe())
+   st.dataframe(df1["humedad ESP32"].describe())
 else:
  st.warning('Necesitas cargar un archivo csv excel.')
